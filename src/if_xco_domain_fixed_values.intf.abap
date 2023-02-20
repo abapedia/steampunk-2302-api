@@ -10,7 +10,6 @@ INTERFACE if_xco_domain_fixed_values PUBLIC.
           PREFERRED PARAMETER io_read_state
       RETURNING
         VALUE(rt_lower_limits) TYPE tt_lower_limits,
-
     get
       IMPORTING
         io_read_state          TYPE REF TO cl_xco_ad_object_read_state OPTIONAL

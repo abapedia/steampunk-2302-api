@@ -6,6 +6,8 @@ INTERFACE if_xco_gtt_foreign_key PUBLIC.
     exists
       IMPORTING
         io_read_state    TYPE REF TO cl_xco_ad_object_read_state OPTIONAL
+        io_origin        TYPE REF TO cl_xco_tab_origin OPTIONAL
+          PREFERRED PARAMETER io_read_state
       RETURNING
         VALUE(rv_exists) TYPE abap_bool,
 

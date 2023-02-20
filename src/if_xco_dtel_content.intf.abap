@@ -2,6 +2,7 @@ INTERFACE if_xco_dtel_content PUBLIC.
   TYPES:
     tv_field_label_text   TYPE c LENGTH 60,
     tv_field_label_length TYPE numc2,
+    tv_parameter_id       TYPE char20,
     BEGIN OF ts_field_label,
       text   TYPE tv_field_label_text,
       length TYPE tv_field_label_length,

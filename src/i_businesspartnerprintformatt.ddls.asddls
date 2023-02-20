@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
 @Search.searchable: true
-@EndUserText.label: 'Business Partner Category Text'
+@EndUserText.label: 'Business Partner Category - Text'
 @ClientHandling.algorithm: #SESSION_VARIABLE
 @ObjectModel: {
   representativeKey: 'BusinessPartnerPrintFormat',

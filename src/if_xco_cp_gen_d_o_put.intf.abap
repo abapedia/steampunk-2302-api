@@ -7,7 +7,6 @@ INTERFACE if_xco_cp_gen_d_o_put PUBLIC.
         structure              TYPE REF TO if_xco_cp_gen_tabl_str_dopu_sc,
       END OF for,
     END OF ts_tabl,
-
     BEGIN OF ts_api,
       bdef TYPE REF TO if_xco_cp_gen_bdef_d_o_put_sct,
       clas TYPE REF TO if_xco_cp_gen_clas_d_o_put_sct,
@@ -16,6 +15,7 @@ INTERFACE if_xco_cp_gen_d_o_put PUBLIC.
       ddlx TYPE REF TO if_xco_cp_gen_ddlx_d_o_put_sct,
       doma TYPE REF TO if_xco_cp_gen_doma_d_o_put_sct,
       dtel TYPE REF TO if_xco_cp_gen_dtel_d_o_put_sct,
+      drty TYPE REF TO if_xco_cp_gen_drty_o_put_sctn,
       intf TYPE REF TO if_xco_cp_gen_intf_d_o_put_sct,
       srvb TYPE REF TO if_xco_cp_gen_srvb_d_o_put_sct,
       srvd TYPE REF TO if_xco_cp_gen_srvd_d_o_put_sct,

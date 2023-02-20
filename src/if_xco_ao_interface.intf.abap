@@ -13,8 +13,9 @@ INTERFACE if_xco_ao_interface PUBLIC.
     type FOR if_xco_ao_object~type.
 
   DATA:
-    component  TYPE REF TO if_xco_intf_component_factory READ-ONLY,
-    components TYPE REF TO if_xco_intf_components_factory READ-ONLY.
+    component       TYPE REF TO if_xco_intf_component_factory READ-ONLY,
+    components      TYPE REF TO if_xco_intf_components_factory READ-ONLY,
+    implementations TYPE REF TO if_xco_intf_implementations_fc READ-ONLY.
 
   METHODS:
     set_api_state

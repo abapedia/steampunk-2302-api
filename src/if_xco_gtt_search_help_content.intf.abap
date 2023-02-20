@@ -6,14 +6,20 @@ INTERFACE if_xco_gtt_search_help_content PUBLIC.
 
   METHODS:
     get_search_help_name
+      IMPORTING
+        io_origin                  TYPE REF TO cl_xco_tab_origin OPTIONAL
       RETURNING
         VALUE(rv_search_help_name) TYPE sxco_ad_object_name,
 
     get_field_assignments
+      IMPORTING
+        io_origin                   TYPE REF TO cl_xco_tab_origin OPTIONAL
       RETURNING
         VALUE(rt_field_assignments) TYPE if_xco_tab_search_help_content=>tt_field_assignment,
 
     get
+      IMPORTING
+        io_origin         TYPE REF TO cl_xco_tab_origin OPTIONAL
       RETURNING
         VALUE(rs_content) TYPE if_xco_tab_search_help_content=>ts_content.
 ENDINTERFACE.

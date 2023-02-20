@@ -13,9 +13,9 @@
 @ObjectModel.usageType.sizeCategory:  #S
 
 
-define view entity I_PublicHolidayCalendarVH
+define view entity I_PublicHolidayCalendarVH 
   as select from I_PublicHolidayCalendarBasic
-
+  
 {
   key PublicHolidayCalendarID,
       PublicHolidayCalendarLegacyID,

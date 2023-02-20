@@ -11,13 +11,11 @@ INTERFACE if_xco_cp_gen_devc_d_o_put PUBLIC.
         iv_name          TYPE sxco_package
       RETURNING
         VALUE(ro_object) TYPE REF TO if_xco_cp_gen_devc_d_o_put_obj,
-
     get_object
       IMPORTING
         iv_name          TYPE sxco_package
       RETURNING
         VALUE(ro_object) TYPE REF TO if_xco_cp_gen_devc_d_o_put_obj,
-
     remove_object
       IMPORTING
         iv_name TYPE sxco_package.

@@ -6,12 +6,16 @@ INTERFACE if_xco_str_components PUBLIC.
     get_names
       IMPORTING
         io_read_state   TYPE REF TO cl_xco_ad_object_read_state OPTIONAL
+        io_origin       TYPE REF TO cl_xco_tab_origin OPTIONAL
+          PREFERRED PARAMETER io_read_state
       RETURNING
         VALUE(rt_names) TYPE tt_names,
 
     get
       IMPORTING
         io_read_state        TYPE REF TO cl_xco_ad_object_read_state OPTIONAL
+        io_origin            TYPE REF TO cl_xco_tab_origin OPTIONAL
+          PREFERRED PARAMETER io_read_state
       RETURNING
         VALUE(rt_components) TYPE sxco_t_str_components.
 ENDINTERFACE.

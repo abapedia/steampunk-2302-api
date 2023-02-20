@@ -5,7 +5,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
 @Search.searchable: true
-@EndUserText.label: 'Texts of business partner address types'
+@EndUserText.label: 'business partner address types - text'
 @ObjectModel: {
   representativeKey: 'AddressType',
   dataCategory: #TEXT,

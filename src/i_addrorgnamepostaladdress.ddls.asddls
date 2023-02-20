@@ -77,5 +77,9 @@ define view entity I_AddrOrgNamePostalAddress
       AddressSearchTerm1,
       AddressSearchTerm2,
       RegionalStructureCheckStatus,
-      AddressGroup
+      AddressGroup,
+      AddressCreatedByUser,
+      AddressCreatedOnDateTime,
+      AddressChangedByUser,
+      AddressChangedOnDateTime
 }

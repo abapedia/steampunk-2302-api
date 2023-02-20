@@ -13,7 +13,7 @@
 @ObjectModel.usageType.sizeCategory:  #M
 
 
-define view entity I_PublHolidayCalendarBasicText
+define view entity I_PublHolidayCalendarBasicText 
   as select from fhc_c_hcal_t
 
 {

@@ -14,7 +14,7 @@
 }
 @Metadata.ignorePropagatedAnnotations: true
 @ClientHandling.algorithm: #SESSION_VARIABLE
-@EndUserText.label: 'Business Partner Occupation Text'
+@EndUserText.label: 'Business Partner Occupation - Text'
 define view I_BusPartOccupationText as select from tb028t {
   key Language,
   key BusinessPartnerOccupation,

@@ -33,6 +33,7 @@ define view I_BPContact
                                                                             and $projection.BusinessPartnerCompany = _ContactRelationship.BusinessPartnerCompany
                                                                             and $projection.BusinessPartnerPerson  = _ContactRelationship.BusinessPartnerPerson
                                                                             and $projection.ValidityEndDate        = _ContactRelationship.ValidityEndDate
+
 {
   key RelationshipNumber,
   key BusinessPartnerCompany,

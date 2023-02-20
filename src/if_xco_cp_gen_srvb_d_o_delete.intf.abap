@@ -9,7 +9,6 @@ INTERFACE if_xco_cp_gen_srvb_d_o_delete PUBLIC.
     add_object
       IMPORTING
         iv_name TYPE sxco_srvb_object_name,
-
     remove_object
       IMPORTING
         iv_name TYPE sxco_srvb_object_name.

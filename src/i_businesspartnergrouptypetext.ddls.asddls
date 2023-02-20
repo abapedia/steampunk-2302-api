@@ -15,7 +15,7 @@
   usageType.sizeCategory : #L,
   usageType.dataClass: #MASTER,
   modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
-  supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT, #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+  supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT, #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE ]
 }
 @Analytics.dataExtraction.enabled: true 
 @Analytics.internalName: #LOCAL

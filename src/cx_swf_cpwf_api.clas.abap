@@ -215,6 +215,15 @@ CLASS cx_swf_cpwf_api DEFINITION
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF error_raising_event.
+    CONSTANTS:
+      BEGIN OF retention_time_already_defined,
+        msgid TYPE symsgid VALUE 'SWF_CPWF_001',
+        msgno TYPE symsgno VALUE '075',
+        attr1 TYPE scx_attrname VALUE '',
+        attr2 TYPE scx_attrname VALUE '',
+        attr3 TYPE scx_attrname VALUE '',
+        attr4 TYPE scx_attrname VALUE '',
+      END OF retention_time_already_defined.
 
     DATA id TYPE string.
     DATA error_code TYPE string.

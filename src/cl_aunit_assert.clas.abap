@@ -69,6 +69,7 @@ CLASS cl_aunit_assert DEFINITION  PUBLIC  ABSTRACT  CREATE PUBLIC.
         IMPORTING     VALUE(exp) TYPE f
                       VALUE(act) TYPE f
                       msg TYPE csequence OPTIONAL
+                      atol TYPE f OPTIONAL
                       rtol TYPE f DEFAULT cl_aunit_assert=>rtol_default
                       level TYPE int1 DEFAULT if_aunit_constants=>severity-medium
                       quit TYPE int1 DEFAULT if_aunit_constants=>quit-test
@@ -78,6 +79,7 @@ CLASS cl_aunit_assert DEFINITION  PUBLIC  ABSTRACT  CREATE PUBLIC.
         IMPORTING     VALUE(exp) TYPE numeric
                       VALUE(act) TYPE numeric
                       msg TYPE csequence OPTIONAL
+                      atol TYPE numeric OPTIONAL
                       rtol TYPE numeric DEFAULT cl_aunit_assert=>rtol_default
                       level TYPE int1 DEFAULT if_aunit_constants=>severity-medium
                       quit TYPE int1 DEFAULT if_aunit_constants=>quit-test

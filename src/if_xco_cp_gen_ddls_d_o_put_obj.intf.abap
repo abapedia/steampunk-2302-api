@@ -11,8 +11,8 @@ INTERFACE if_xco_cp_gen_ddls_d_o_put_obj PUBLIC.
     create_form_specification
       RETURNING
         VALUE(ro_form_specification) TYPE REF TO not_released,
-    delete_form_specification,
     get_form_specification
       RETURNING
-        VALUE(ro_form_specification) TYPE REF TO not_released.
+        VALUE(ro_form_specification) TYPE REF TO not_released,
+    delete_form_specification.
 ENDINTERFACE.

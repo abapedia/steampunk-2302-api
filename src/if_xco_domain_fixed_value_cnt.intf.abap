@@ -2,7 +2,6 @@ INTERFACE if_xco_domain_fixed_value_cnt PUBLIC.
   TYPES:
     tv_upper_limit TYPE c LENGTH 10,
     tv_description TYPE c LENGTH 60,
-
     BEGIN OF ts_content,
       upper_limit TYPE tv_upper_limit,
       description TYPE tv_description,
@@ -11,7 +10,6 @@ INTERFACE if_xco_domain_fixed_value_cnt PUBLIC.
   DATA:
     lower_limit TYPE if_xco_domain_fixed_value=>tv_lower_limit READ-ONLY,
     domain      TYPE REF TO if_xco_domain READ-ONLY,
-
     read_state  TYPE REF TO cl_xco_ad_object_read_state READ-ONLY.
 
   METHODS:
@@ -20,13 +18,11 @@ INTERFACE if_xco_domain_fixed_value_cnt PUBLIC.
         io_origin             TYPE REF TO cl_xco_domain_origin OPTIONAL
       RETURNING
         VALUE(rv_upper_limit) TYPE tv_upper_limit,
-
     get_description
       IMPORTING
         io_origin             TYPE REF TO cl_xco_domain_origin OPTIONAL
       RETURNING
         VALUE(rv_description) TYPE tv_description,
-
     get
       IMPORTING
         io_origin         TYPE REF TO cl_xco_domain_origin OPTIONAL

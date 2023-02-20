@@ -1,6 +1,7 @@
 CLASS cl_xco_sc_changeability_f DEFINITION PUBLIC FINAL CREATE PRIVATE.
   PUBLIC SECTION.
     DATA:
+      list                  TYPE cl_xco_sc_changeability=>list READ-ONLY,
       full_changeability    TYPE REF TO cl_xco_sc_changeability READ-ONLY,
       reduced_changeability TYPE REF TO cl_xco_sc_changeability READ-ONLY,
       only_extendable       TYPE REF TO cl_xco_sc_changeability READ-ONLY,

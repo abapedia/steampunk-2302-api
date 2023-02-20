@@ -12,12 +12,16 @@
   lifecycle.contract.type: #PUBLIC_LOCAL_API
 }
 
-define view entity I_AddrCurDefaultEmailAddress as select from I_AddressEmailAddress_2
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK" ]  } */
+define view entity I_AddrCurDefaultEmailAddress
+  as select from I_AddressEmailAddress_2
 {
   key AddressID,
   key AddressPersonID,
       CommMediumSequenceNumber,
       EmailAddress,
       ValidityStartDate,
-      ValidityEndDate
+      ValidityEndDate,
+      _AddressCommunicationRemark,
+      _AddressCommunicationUsage
 }

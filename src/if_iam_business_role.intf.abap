@@ -1,5 +1,7 @@
 INTERFACE if_iam_business_role
   PUBLIC.
+
+  TYPES ty_brole_group TYPE c LENGTH 12.
   TYPES ty_id TYPE c LENGTH 40.
   TYPES ty_uuid TYPE x LENGTH 16.
   TYPES ty_description TYPE c LENGTH 80.
@@ -88,28 +90,36 @@ INTERFACE if_iam_business_role
     IMPORTING
       !iv_description TYPE ty_description
     EXPORTING
-      !et_return      TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS set_long_text
     IMPORTING
-      !iv_text   TYPE ty_long_text
+      !iv_text TYPE ty_long_text
     EXPORTING
       !et_return TYPE bapirettab.
   METHODS get_admin_data
     RETURNING
       VALUE(rs_admin_data) TYPE ty_admin_data.
+  METHODS set_group DEFAULT IGNORE
+    IMPORTING
+      !iv_group TYPE ty_brole_group
+    EXPORTING
+      !et_return TYPE bapirettab.
   METHODS get_business_catalogs
     RETURNING
       VALUE(rt_bu_catalog) TYPE tt_bu_catalog_id.
+  METHODS get_group DEFAULT IGNORE
+    RETURNING
+      VALUE(rv_group) TYPE ty_brole_group.
   METHODS add_business_catalog
     IMPORTING
       !iv_bu_catalog_id TYPE ty_bu_catalog_id
     EXPORTING
-      !et_return        TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS remove_business_catalog
     IMPORTING
       !iv_bu_catalog_id TYPE ty_bu_catalog_id
     EXPORTING
-      !et_return        TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS get_flp_spaces
     RETURNING
       VALUE(rt_flp_space) TYPE tt_flp_space_id.
@@ -117,18 +127,26 @@ INTERFACE if_iam_business_role
     IMPORTING
       !iv_flp_space_id TYPE ty_flp_space_id
     EXPORTING
-      !et_return       TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS add_flp_space_from_template
     IMPORTING
       !iv_flp_space_template_id TYPE ty_flp_space_id
-      !iv_flp_space_id          TYPE ty_flp_space_id
+      !iv_flp_space_id TYPE ty_flp_space_id
     EXPORTING
-      !et_return                TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS remove_flp_space
     IMPORTING
       !iv_flp_space_id TYPE ty_flp_space_id
     EXPORTING
-      !et_return       TYPE bapirettab.
+      !et_return TYPE bapirettab.
+  METHODS set_cflp_exposure
+    IMPORTING
+      !iv_expose TYPE abap_bool
+    EXPORTING
+      !et_return TYPE bapirettab.
+  METHODS get_cflp_exposure
+    RETURNING
+      VALUE(rv_exposed) TYPE abap_bool.
   METHODS get_users
     RETURNING
       VALUE(rt_users) TYPE tt_user_id.
@@ -136,27 +154,27 @@ INTERFACE if_iam_business_role
     IMPORTING
       !iv_user_id TYPE ty_user_id
     EXPORTING
-      !et_return  TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS remove_user
     IMPORTING
       !iv_user_id TYPE ty_user_id
     EXPORTING
-      !et_return  TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS set_access_restriction
     IMPORTING
-      !iv_write  TYPE ty_access_restriction_code OPTIONAL
-      !iv_read   TYPE ty_access_restriction_code OPTIONAL
-      !iv_f4     TYPE ty_access_restriction_code OPTIONAL
+      !iv_write TYPE ty_access_restriction_code OPTIONAL
+      !iv_read TYPE ty_access_restriction_code OPTIONAL
+      !iv_f4 TYPE ty_access_restriction_code OPTIONAL
     EXPORTING
       !et_return TYPE bapirettab.
   METHODS get_access_restriction
     EXPORTING
       !ev_write TYPE ty_access_restriction_code
-      !ev_read  TYPE ty_access_restriction_code
-      !ev_f4    TYPE ty_access_restriction_code.
+      !ev_read TYPE ty_access_restriction_code
+      !ev_f4 TYPE ty_access_restriction_code.
   METHODS get_restrictions
     IMPORTING
-      !iv_access_category   TYPE ty_access_category_code OPTIONAL
+      !iv_access_category TYPE ty_access_category_code OPTIONAL
     RETURNING
       VALUE(rt_restriction) TYPE tt_restriction.
   METHODS create_restriction
@@ -164,18 +182,18 @@ INTERFACE if_iam_business_role
       !is_restriction TYPE ty_restriction
     EXPORTING
       !es_restriction TYPE ty_restriction
-      !et_return      TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS update_restriction
     IMPORTING
-      !iv_uuid                     TYPE ty_uuid
+      !iv_uuid TYPE ty_uuid
       !it_restriction_field_values TYPE tt_restriction_field_value
     EXPORTING
-      !et_return                   TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS remove_restriction
     IMPORTING
-      !iv_uuid             TYPE ty_uuid OPTIONAL
+      !iv_uuid TYPE ty_uuid OPTIONAL
       !iv_restriction_type TYPE ty_restriction_type OPTIONAL
-      !iv_access_category  TYPE ty_access_category_code OPTIONAL
+      !iv_access_category TYPE ty_access_category_code OPTIONAL
     EXPORTING
-      !et_return           TYPE bapirettab.
+      !et_return TYPE bapirettab.
 ENDINTERFACE.

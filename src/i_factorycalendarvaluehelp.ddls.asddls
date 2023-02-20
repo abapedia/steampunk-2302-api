@@ -13,9 +13,9 @@
 @ObjectModel.usageType.sizeCategory:  #S
 
 
-define view entity I_FactoryCalendarValueHelp
+define view entity I_FactoryCalendarValueHelp 
   as select from I_FactoryCalendarBasic
-
+  
 {
   key FactoryCalendarID,
       FactoryCalendarLegacyID,

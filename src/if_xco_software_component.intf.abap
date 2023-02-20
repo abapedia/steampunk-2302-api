@@ -3,6 +3,7 @@ INTERFACE if_xco_software_component PUBLIC.
     if_xco_printable.
 
   TYPES:
+    list    TYPE STANDARD TABLE OF REF TO if_xco_software_component WITH DEFAULT KEY,
     tv_name TYPE c LENGTH 30.
 
   DATA:

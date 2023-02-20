@@ -27,14 +27,18 @@ CLASS cl_abap_ungzip_text_stream DEFINITION
       !gzip_in_len TYPE i DEFAULT -1
       RAISING
       cx_parameter_invalid_range
-      cx_sy_conversion_codepage
-      cx_sy_compression_error.
+      cx_sy_buffer_overflow
+      cx_sy_compression_error
+      cx_sy_conversion_codepage.
     METHODS decompress_text_stream_end
       IMPORTING
       !gzip_in TYPE xsequence
       !gzip_in_len TYPE i DEFAULT -1
       RAISING
-      cx_sy_compression_error.
+      cx_parameter_invalid_range
+      cx_sy_buffer_overflow
+      cx_sy_compression_error
+      cx_sy_conversion_codepage.
 ENDCLASS.
 
 CLASS cl_abap_ungzip_text_stream IMPLEMENTATION.

@@ -158,5 +158,9 @@ define view entity I_OrganizationAddress
       TertiaryRegion,
       TertiaryRegionName,
       RegionalStructureCheckStatus,
-      AddressGroup
+      AddressGroup,
+      AddressCreatedByUser,
+      AddressCreatedOnDateTime,
+      AddressChangedByUser,
+      AddressChangedOnDateTime
 }

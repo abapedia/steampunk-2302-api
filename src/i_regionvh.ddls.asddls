@@ -1,4 +1,5 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
+@Consumption.ranked: true 
 @EndUserText.label: 'Region'
 @Metadata.ignorePropagatedAnnotations: true
 @ObjectModel.dataCategory: #VALUE_HELP

@@ -45,7 +45,8 @@ CLASS cl_cmis_property_ids DEFINITION
     CONSTANTS content_stream_hash TYPE string VALUE 'cmis:contentStreamHash' ##NO_TEXT.
     CONSTANTS doc_component_id TYPE string VALUE 'sapbo:basedocument:DocumentComponentID' ##NO_TEXT.
     CONSTANTS item TYPE string VALUE 'cmis:item' ##NO_TEXT.
-    CONSTANTS sap_office_url TYPE string VALUE 'sap:officeurl'.
+    CONSTANTS sap_office_url TYPE string VALUE 'sap:officeurl' ##NO_TEXT.
+    CONSTANTS convert_mimetype TYPE string VALUE 'sap:convertToMimeType' ##NO_TEXT.
   PROTECTED SECTION.
 ENDCLASS.
 

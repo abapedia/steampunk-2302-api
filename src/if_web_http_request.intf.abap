@@ -100,6 +100,7 @@ INTERFACE if_web_http_request
   METHODS set_uri_path
     IMPORTING
       !i_uri_path TYPE string
+      !multivalue TYPE int4 DEFAULT 0
     RETURNING
       VALUE(r_value) TYPE REF TO if_web_http_request
     RAISING

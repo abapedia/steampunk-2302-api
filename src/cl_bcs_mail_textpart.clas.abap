@@ -13,6 +13,18 @@ CLASS cl_bcs_mail_textpart DEFINITION
           iv_content_type TYPE ty_content_type OPTIONAL
           iv_filename     TYPE string OPTIONAL
         RETURNING
+          VALUE(ro_instance) TYPE REF TO cl_bcs_mail_textpart,
+      create_text_plain
+        IMPORTING
+          iv_content      TYPE string
+          iv_filename     TYPE string OPTIONAL
+        RETURNING
+          VALUE(ro_instance) TYPE REF TO cl_bcs_mail_textpart,
+      create_text_html
+        IMPORTING
+          iv_content      TYPE string
+          iv_filename     TYPE string OPTIONAL
+        RETURNING
           VALUE(ro_instance) TYPE REF TO cl_bcs_mail_textpart.
 
     METHODS:

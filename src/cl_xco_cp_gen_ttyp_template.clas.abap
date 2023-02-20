@@ -7,7 +7,7 @@ CLASS cl_xco_cp_gen_ttyp_template DEFINITION PUBLIC ABSTRACT CREATE PRIVATE.
     METHODS:
       constructor
         IMPORTING
-          io_standard_template TYPE REF TO not_released,
+          io_template TYPE REF TO not_released,
 
       get_additional_check ABSTRACT
         RETURNING

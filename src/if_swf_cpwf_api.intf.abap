@@ -127,6 +127,7 @@ INTERFACE if_swf_cpwf_api
       mailtask_failed               TYPE cpwf_log_type VALUE 'MAILTASK_FAILED',
     END OF c_cpwf_log_type.
   CONSTANTS cv_consumer_type_default TYPE swf_cpwf_consumer VALUE 'DEFAULT' ##NO_TEXT.
+  CONSTANTS cv_no_retention_time TYPE retention_time VALUE -1.
   CLASS-METHODS get_start_context_from_data
     IMPORTING
       !iv_data TYPE data
@@ -241,4 +242,10 @@ INTERFACE if_swf_cpwf_api
       !iv_uppercase TYPE abap_bool DEFAULT abap_false
     RETURNING
       VALUE(ro_json_converter) TYPE REF TO if_swf_cp_json.
+  METHODS update_retention_time
+    IMPORTING
+      iv_cpwf_handle TYPE cpwf_handle
+      iv_retention_time TYPE retention_time
+    RAISING
+      cx_swf_cpwf_api.
 ENDINTERFACE.

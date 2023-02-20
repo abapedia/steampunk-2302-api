@@ -27,12 +27,17 @@ CLASS cl_abap_gzip_binary_stream DEFINITION
       !raw_in_len TYPE i DEFAULT -1
       RAISING
       cx_parameter_invalid_range
-      cx_sy_conversion_codepage.
+      cx_sy_buffer_overflow
+      cx_sy_conversion_codepage
+      cx_sy_compression_error.
     METHODS compress_binary_stream_end
       IMPORTING
       !raw_in TYPE xsequence
       !raw_in_len TYPE i DEFAULT -1
       RAISING
+      cx_parameter_invalid_range
+      cx_sy_buffer_overflow
+      cx_sy_conversion_codepage
       cx_sy_compression_error.
 ENDCLASS.
 

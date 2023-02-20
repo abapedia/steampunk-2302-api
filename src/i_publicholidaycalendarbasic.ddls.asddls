@@ -10,9 +10,9 @@
 @ObjectModel.usageType.sizeCategory:  #S
 
 
-define view entity I_PublicHolidayCalendarBasic
+define view entity I_PublicHolidayCalendarBasic 
   as select from fhc_c_hcal
-
+  
   association [0..*] to I_PublHolidayCalendarBasicText as _Text on $projection.PublicHolidayCalendarID = _Text.PublicHolidayCalendarID
   association [0..*] to I_PublHldayCalendarAssignment as _Assgn on $projection.PublicHolidayCalendarID = _Assgn.PublicHolidayCalendarID
 

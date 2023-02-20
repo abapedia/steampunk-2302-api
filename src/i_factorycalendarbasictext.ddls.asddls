@@ -13,7 +13,7 @@
 @ObjectModel.usageType.sizeCategory:  #M
 
 
-define view entity I_FactoryCalendarBasicText
+define view entity I_FactoryCalendarBasicText 
   as select from fhc_c_fcal_t
 
 {

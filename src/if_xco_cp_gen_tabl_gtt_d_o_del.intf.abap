@@ -9,7 +9,6 @@ INTERFACE if_xco_cp_gen_tabl_gtt_d_o_del PUBLIC.
     add_object
       IMPORTING
         iv_name TYPE sxco_gtt_object_name,
-
     remove_object
       IMPORTING
         iv_name TYPE sxco_gtt_object_name.

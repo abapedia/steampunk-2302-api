@@ -1,6 +1,7 @@
 INTERFACE if_xco_i18n_tt_target_record PUBLIC.
 
   TYPES:
+    list TYPE STANDARD TABLE OF REF TO if_xco_i18n_tt_target_record WITH DEFAULT KEY,
     BEGIN OF ts_master_key_field,
       name  TYPE sxco_ad_field_name,
       value TYPE REF TO if_xco_payload,

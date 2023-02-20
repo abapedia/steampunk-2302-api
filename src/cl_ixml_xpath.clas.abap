@@ -21,7 +21,10 @@ CLASS cl_ixml_xpath DEFINITION
       !nsdeclarations TYPE tt_nsdeclaration OPTIONAL
       RETURNING
       VALUE(rval) TYPE REF TO if_ixml_xpath.
-    METHODS constructor.
+    METHODS constructor
+      IMPORTING
+      !expression TYPE string OPTIONAL
+      !nsdeclarations TYPE tt_nsdeclaration OPTIONAL.
 ENDCLASS.
 
 CLASS cl_ixml_xpath IMPLEMENTATION.

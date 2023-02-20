@@ -5,7 +5,7 @@
 @VDM.viewType: #BASIC
 @AccessControl.authorizationCheck: #CHECK
 @AccessControl.personalData.blocking: #REQUIRED
-@AccessControl.privilegedAssociations:[ '_AddressDefaultRepresentation']
+@AccessControl.privilegedAssociations:[ '_AddressDefaultRepresentation' ]
 @Metadata.ignorePropagatedAnnotations: true 
 @ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,
                                      #CDS_MODELING_DATA_SOURCE,

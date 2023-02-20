@@ -187,6 +187,15 @@ PUBLIC
         attr4 TYPE scx_attrname VALUE '',
       END OF invalid_connection_mode,
 
+      BEGIN OF smtp_node_config_error,
+        msgid TYPE symsgid VALUE 'BCS_MAIL_CONFIG',
+        msgno TYPE symsgno VALUE '020',
+        attr1 TYPE scx_attrname VALUE 'ATTRIBUTE1',
+        attr2 TYPE scx_attrname VALUE 'ATTRIBUTE2',
+        attr3 TYPE scx_attrname VALUE '',
+        attr4 TYPE scx_attrname VALUE '',
+      END OF smtp_node_config_error,
+
       BEGIN OF address_config_error,
         msgid TYPE symsgid VALUE 'BCS_MAIL_CONFIG',
         msgno TYPE symsgno VALUE '100',

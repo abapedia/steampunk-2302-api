@@ -35,9 +35,11 @@ define view entity I_AddressPhoneNumber_2
   key AddressPersonID,
   key CommMediumSequenceNumber,
       PhoneNumberCountry,
+      CommLineNotForUnsolicitedCntct,
       PhoneAreaCodeSubscriberNumber,
       PhoneExtensionNumber,
       InternationalPhoneNumber,
+      PhoneIsSMSEnabled,
       PhoneNumberType,
       ValidityStartDate,
       ValidityEndDate

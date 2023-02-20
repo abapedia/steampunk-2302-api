@@ -33,6 +33,7 @@ define view entity I_AddressFaxNumber_2
   key AddressPersonID,
   key CommMediumSequenceNumber,
       FaxNumberCountry,
+      CommLineNotForUnsolicitedCntct,
       FaxAreaCodeSubscriberNumber,
       FaxExtensionNumber,
       InternationalFaxNumber,

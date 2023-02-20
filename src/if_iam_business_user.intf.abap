@@ -1,5 +1,7 @@
 INTERFACE if_iam_business_user
   PUBLIC.
+
+  TYPES ty_user_group TYPE c LENGTH 12.
   TYPES ty_user_id TYPE uname.
   TYPES ty_user_name TYPE c LENGTH 40.
   TYPES ty_bupa_id TYPE c LENGTH 10.
@@ -11,7 +13,8 @@ INTERFACE if_iam_business_user
   TYPES ty_date TYPE dats.
   TYPES ty_lock_status TYPE i.
   TYPES ty_user_globaluid TYPE c LENGTH 36.
-  TYPES tt_user_globaluid_history TYPE STANDARD TABLE OF ty_user_globaluid WITH DEFAULT KEY.
+  TYPES:
+    tt_user_globaluid_history TYPE STANDARD TABLE OF ty_user_globaluid WITH DEFAULT KEY.
   TYPES:
     tt_user_id TYPE STANDARD TABLE OF ty_user_id WITH EMPTY KEY.
 
@@ -32,7 +35,7 @@ INTERFACE if_iam_business_user
     IMPORTING
       !iv_user_name TYPE ty_user_name
     EXPORTING
-      !et_return    TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS set_logon_language
     IMPORTING
       !iv_language TYPE ty_logon_language.
@@ -51,18 +54,24 @@ INTERFACE if_iam_business_user
   METHODS set_validity
     IMPORTING
       !iv_valid_from TYPE ty_date OPTIONAL
-      !iv_valid_to   TYPE ty_date OPTIONAL.
+      !iv_valid_to TYPE ty_date OPTIONAL.
   METHODS set_globaluid
     IMPORTING
-      !iv_globaluid         TYPE ty_user_globaluid
+      !iv_globaluid TYPE ty_user_globaluid
       !it_globaluid_history TYPE tt_user_globaluid_history OPTIONAL.
   METHODS get_globaluid
     EXPORTING
-      !ev_globaluid         TYPE ty_user_globaluid
+      !ev_globaluid TYPE ty_user_globaluid
       !et_globaluid_history TYPE tt_user_globaluid_history.
   METHODS get_user_id
     RETURNING
       VALUE(rv_user_id) TYPE ty_user_id.
+  METHODS set_user_group DEFAULT IGNORE
+    IMPORTING
+      !iv_user_group TYPE ty_user_group.
+  METHODS get_user_group DEFAULT IGNORE
+    RETURNING
+      VALUE(rv_user_group) TYPE ty_user_group.
   METHODS get_user_name
     RETURNING
       VALUE(rv_user_name) TYPE ty_user_name.
@@ -84,21 +93,21 @@ INTERFACE if_iam_business_user
   METHODS get_validity
     EXPORTING
       !ev_valid_from TYPE ty_date
-      !ev_valid_to   TYPE ty_date.
+      !ev_valid_to TYPE ty_date.
   METHODS get_lock_status
     EXPORTING
-      !ev_locked      TYPE abap_bool
+      !ev_locked TYPE abap_bool
       !ev_lock_status TYPE ty_lock_status.
   METHODS add_business_roles
     IMPORTING
       !it_business_role_id TYPE if_iam_business_role=>tt_id
     EXPORTING
-      !et_return           TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS remove_business_roles
     IMPORTING
       !it_business_role_id TYPE if_iam_business_role=>tt_id
     EXPORTING
-      !et_return           TYPE bapirettab.
+      !et_return TYPE bapirettab.
   METHODS get_business_roles
     RETURNING
       VALUE(rt_business_role_id) TYPE if_iam_business_role=>tt_id.

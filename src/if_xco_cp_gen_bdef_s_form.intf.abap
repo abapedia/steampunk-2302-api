@@ -63,19 +63,16 @@ INTERFACE if_xco_cp_gen_bdef_s_form PUBLIC.
         iv_use_draft TYPE abap_bool DEFAULT abap_true
       RETURNING
         VALUE(ro_me) TYPE REF TO if_xco_cp_gen_bdef_s_form,
-
     add_behavior
       IMPORTING
         iv_cds_entity      TYPE sxco_cds_object_name OPTIONAL
       RETURNING
         VALUE(ro_behavior) TYPE REF TO if_xco_gen_bdef_s_fo_behavior,
-
     get_behavior
       IMPORTING
         iv_cds_entity      TYPE sxco_cds_object_name OPTIONAL
       RETURNING
         VALUE(ro_behavior) TYPE REF TO if_xco_gen_bdef_s_fo_behavior,
-
     remove_behavior
       IMPORTING
         iv_cds_entity TYPE sxco_cds_object_name OPTIONAL,

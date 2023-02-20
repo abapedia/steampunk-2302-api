@@ -3,7 +3,7 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
-@EndUserText.label: 'Business Partner Tax Type Text'
+@EndUserText.label: 'Business Partner Tax Type - Text'
 @ClientHandling.algorithm: #SESSION_VARIABLE
 @ObjectModel: {
   representativeKey: 'BPTaxType',

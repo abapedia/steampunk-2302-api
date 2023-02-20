@@ -26,19 +26,16 @@ INTERFACE if_xco_gen_tabl_dbt_s_fo_field PUBLIC.
         iv_key_indicator TYPE tv_key_indicator DEFAULT abap_true
       RETURNING
         VALUE(ro_me)     TYPE REF TO if_xco_gen_tabl_dbt_s_fo_field,
-
     set_not_null
       IMPORTING
         iv_not_null  TYPE tv_not_null DEFAULT abap_true
       RETURNING
         VALUE(ro_me) TYPE REF TO if_xco_gen_tabl_dbt_s_fo_field,
-
     set_type
       IMPORTING
         io_type      TYPE REF TO if_xco_gen_tabl_field_type_dbt
       RETURNING
         VALUE(ro_me) TYPE REF TO if_xco_gen_tabl_dbt_s_fo_field,
-
     set_language_indicator
       IMPORTING
         iv_language_indicator TYPE tv_language_indicator DEFAULT abap_true

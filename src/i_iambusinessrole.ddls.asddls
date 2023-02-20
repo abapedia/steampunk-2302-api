@@ -16,6 +16,7 @@ define root view entity I_IAMBusinessRole
 {
   key BusinessRoleUUID,
       BusinessRole,
+      BusinessRoleGroup,
       BusinessRoleTemplate,
       CreatedByUser,
       CreationDateTime,

@@ -18,10 +18,10 @@ INTERFACE if_apack_manifest PUBLIC.
          ty_repository_type TYPE string,
          BEGIN OF ty_descriptor.
            INCLUDE TYPE ty_identifier_with_version.
-  TYPES:   repository_type TYPE ty_repository_type,
+  TYPES: repository_type TYPE ty_repository_type,
            git_url         TYPE string,
            dependencies    TYPE ty_dependencies,
-           END OF ty_descriptor.
+         END OF ty_descriptor.
 
   CONSTANTS: co_file_name TYPE string VALUE '.apack-manifest.xml',
              co_abap_git  TYPE ty_repository_type VALUE 'abapGit'.

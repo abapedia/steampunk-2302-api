@@ -1,7 +1,18 @@
 @AbapCatalog.sqlViewName: 'I_MD_FUNCTION'
-@EndUserText.label: 'Value Help for Function of Contact Person'
+@EndUserText.label: 'Value Help for Func of Contact Person'
 @VDM.viewType: #BASIC
-@Analytics : { dataCategory: #DIMENSION }
+@Analytics: {
+ dataCategory: #DIMENSION,
+ dataExtraction: {
+    enabled: true,
+    delta.changeDataCapture: {
+      automatic: true
+      }
+    }
+  }
+//@Analytics : { dataCategory: #DIMENSION }
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ,
+                           #EXTRACTION_DATA_SOURCE , #ANALYTICAL_DIMENSION ]
 @ObjectModel.sapObjectNodeType.name: 'BPContactPersonFunction'
 @ObjectModel.representativeKey: 'ContactPersonFunction'
 @Search.searchable: true

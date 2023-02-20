@@ -12,9 +12,9 @@
 
 define view entity I_FactoryCalendarBasic
   as select from fhc_c_fcal
-
+  
   association [0..*] to I_FactoryCalendarBasicText as _Text on $projection.FactoryCalendarID = _Text.FactoryCalendarID
-
+  
 {
   key FactoryCalendarID,
       FactoryCalendarLegacyID,

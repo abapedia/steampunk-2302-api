@@ -41,7 +41,6 @@ define view I_BusinessPartnerToBPRole
 
   association [0..1] to I_BusinessPartnerRole as _BusinessPartnerRole on $projection.BusinessPartnerRole = _BusinessPartnerRole.BusinessPartnerRole
   association [0..1] to I_BusinessPartner     as _BusinessPartner     on $projection.BusinessPartner = _BusinessPartner.BusinessPartner
-    
 {
       mandt,
   key BusinessPartner,

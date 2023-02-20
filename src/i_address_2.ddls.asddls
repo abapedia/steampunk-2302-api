@@ -20,7 +20,7 @@
 }
 
 define view entity I_Address_2
-  as select from P_Address_2
+  as select from P_Address_2 as Address
   association [0..1] to I_OrganizationAddress          as _OrganizationAddress          on  _OrganizationAddress.AddressID                 = $projection.AddressID
                                                                                         and _OrganizationAddress.AddressRepresentationCode = $projection.AddressRepresentationCode
                                                                                         and _OrganizationAddress.AddressPersonID           = $projection.AddressPersonID
@@ -115,6 +115,10 @@ define view entity I_Address_2
       TertiaryRegionName,
       RegionalStructureCheckStatus,
       AddressGroup,
+      AddressCreatedByUser,
+      AddressCreatedOnDateTime,
+      AddressChangedByUser,
+      AddressChangedOnDateTime,
       _Region,
       _Country,
       _FormOfAddress,

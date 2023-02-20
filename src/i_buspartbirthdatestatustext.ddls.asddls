@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
 @ClientHandling.algorithm: #SESSION_VARIABLE
-@EndUserText.label: 'Text View for  I_BusPartBirthDateStatus'
+@EndUserText.label: 'Birth Date Status - Text'
 @ObjectModel: {
   representativeKey: 'BusinessPartnerBirthDateStatus',
   dataCategory: #TEXT,

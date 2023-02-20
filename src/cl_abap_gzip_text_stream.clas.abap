@@ -28,6 +28,7 @@ CLASS cl_abap_gzip_text_stream DEFINITION
       !text_in_len TYPE i DEFAULT -1
       RAISING
       cx_parameter_invalid_range
+      cx_sy_buffer_overflow
       cx_sy_conversion_codepage
       cx_sy_compression_error.
     METHODS compress_text_stream_end
@@ -35,6 +36,9 @@ CLASS cl_abap_gzip_text_stream DEFINITION
       !text_in TYPE csequence
       !text_in_len TYPE i DEFAULT -1
       RAISING
+      cx_parameter_invalid_range
+      cx_sy_buffer_overflow
+      cx_sy_conversion_codepage
       cx_sy_compression_error.
 ENDCLASS.
 

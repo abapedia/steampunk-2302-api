@@ -15,19 +15,16 @@ INTERFACE if_xco_cp_gen_srvd_s_form PUBLIC.
         iv_short_description TYPE tv_short_description
       RETURNING
         VALUE(ro_me)         TYPE REF TO if_xco_cp_gen_srvd_s_form,
-
     add_exposure
       IMPORTING
         iv_cds_entity      TYPE sxco_cds_object_name
       RETURNING
         VALUE(ro_exposure) TYPE REF TO if_xco_gen_srvd_s_fo_exposure,
-
     get_exposure
       IMPORTING
         iv_cds_entity      TYPE sxco_cds_object_name
       RETURNING
         VALUE(ro_exposure) TYPE REF TO if_xco_gen_srvd_s_fo_exposure,
-
     remove_exposure
       IMPORTING
         iv_cds_entity TYPE sxco_cds_object_name.

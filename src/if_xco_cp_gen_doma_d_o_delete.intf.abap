@@ -9,7 +9,6 @@ INTERFACE if_xco_cp_gen_doma_d_o_delete PUBLIC.
     add_object
       IMPORTING
         iv_name TYPE sxco_ad_object_name,
-
     remove_object
       IMPORTING
         iv_name TYPE sxco_ad_object_name.

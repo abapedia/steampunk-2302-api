@@ -1,7 +1,6 @@
 INTERFACE if_xco_cp_gen_msag_s_fo_msg PUBLIC.
   TYPES:
     tv_number     TYPE symsgno,
-
     tv_short_text TYPE c LENGTH 73.
 
   DATA:

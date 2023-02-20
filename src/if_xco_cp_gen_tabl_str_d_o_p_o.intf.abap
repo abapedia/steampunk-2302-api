@@ -1,5 +1,6 @@
 INTERFACE if_xco_cp_gen_tabl_str_d_o_p_o PUBLIC.
   DATA:
+    " The name of the object.
     name TYPE sxco_ad_object_name READ-ONLY.
 
   METHODS:
@@ -8,17 +9,15 @@ INTERFACE if_xco_cp_gen_tabl_str_d_o_p_o PUBLIC.
         iv_package   TYPE sxco_package
       RETURNING
         VALUE(ro_me) TYPE REF TO if_xco_cp_gen_tabl_str_d_o_p_o,
-
     set_template
       IMPORTING
         io_template TYPE REF TO if_xco_cp_gen_tabl_str_tmplt,
-
     unset_template,
     create_form_specification
       RETURNING
         VALUE(ro_form_specification) TYPE REF TO if_xco_cp_gen_tabl_str_s_form,
-    delete_form_specification,
     get_form_specification
       RETURNING
-        VALUE(ro_form_specification) TYPE REF TO if_xco_cp_gen_tabl_str_s_form.
+        VALUE(ro_form_specification) TYPE REF TO if_xco_cp_gen_tabl_str_s_form,
+    delete_form_specification.
 ENDINTERFACE.

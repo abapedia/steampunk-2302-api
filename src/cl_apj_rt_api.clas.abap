@@ -92,6 +92,8 @@ CLASS cl_apj_rt_api DEFINITION
       !is_end_info TYPE ty_end_info OPTIONAL
       !is_scheduling_info TYPE ty_scheduling_info OPTIONAL
       !it_job_parameter_value TYPE tt_job_parameter_value OPTIONAL
+      !iv_jobname TYPE ty_jobname OPTIONAL
+      !iv_jobcount TYPE ty_jobcount OPTIONAL
       EXPORTING
       !ev_jobname TYPE ty_jobname
       !ev_jobcount TYPE ty_jobcount
@@ -116,6 +118,12 @@ CLASS cl_apj_rt_api DEFINITION
       EXPORTING
       !ev_catalog_name TYPE ty_catalog_name
       !ev_template_name TYPE ty_template_name
+      RAISING
+      cx_apj_rt.
+    CLASS-METHODS generate_jobkey
+      EXPORTING
+      !ev_jobname TYPE ty_jobname
+      !ev_jobcount TYPE ty_jobcount
       RAISING
       cx_apj_rt.
 ENDCLASS.

@@ -5,8 +5,8 @@ CLASS cx_apj_rt DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES if_t100_dyn_msg.
     INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
 
     CONSTANTS:
     BEGIN OF cx_job_doesnt_exist,
@@ -44,7 +44,6 @@ CLASS cx_apj_rt DEFINITION
        attr3 TYPE scx_attrname VALUE '',
        attr4 TYPE scx_attrname VALUE '',
      END OF cx_no_auth_to_read_details.
-
     CONSTANTS:
     BEGIN OF cx_no_runtime_info,
        msgid TYPE symsgid VALUE 'BT',
@@ -54,11 +53,46 @@ CLASS cx_apj_rt DEFINITION
        attr3 TYPE scx_attrname VALUE '',
        attr4 TYPE scx_attrname VALUE '',
       END OF cx_no_runtime_info.
-
     DATA bapimsg TYPE bapiret2.
     DATA:
     object TYPE c LENGTH 40.
     DATA uname TYPE uname.
+    CONSTANTS:
+    BEGIN OF  cx_err_create_jobname,
+       msgid TYPE symsgid VALUE 'APJ_RT',
+       msgno TYPE symsgno VALUE '109',
+       attr1 TYPE scx_attrname VALUE '',
+       attr2 TYPE scx_attrname VALUE '',
+       attr3 TYPE scx_attrname VALUE '',
+       attr4 TYPE scx_attrname VALUE '',
+      END OF cx_err_create_jobname.
+    CONSTANTS:
+    BEGIN OF  cx_err_create_jobcount,
+       msgid TYPE symsgid VALUE 'APJ_RT',
+       msgno TYPE symsgno VALUE '110',
+       attr1 TYPE scx_attrname VALUE '',
+       attr2 TYPE scx_attrname VALUE '',
+       attr3 TYPE scx_attrname VALUE '',
+       attr4 TYPE scx_attrname VALUE '',
+      END OF cx_err_create_jobcount.
+    CONSTANTS:
+    BEGIN OF  cx_wrong_jobname_jobcount,
+       msgid TYPE symsgid VALUE 'APJ_RT',
+       msgno TYPE symsgno VALUE '111',
+       attr1 TYPE scx_attrname VALUE '',
+       attr2 TYPE scx_attrname VALUE '',
+       attr3 TYPE scx_attrname VALUE '',
+       attr4 TYPE scx_attrname VALUE '',
+      END OF cx_wrong_jobname_jobcount.
+    CONSTANTS:
+    BEGIN OF cx_calendar_missing,
+       msgid TYPE symsgid VALUE 'APJ_RT',
+       msgno TYPE symsgno VALUE '112',
+       attr1 TYPE scx_attrname VALUE '',
+       attr2 TYPE scx_attrname VALUE '',
+       attr3 TYPE scx_attrname VALUE '',
+       attr4 TYPE scx_attrname VALUE '',
+      END OF cx_calendar_missing.
 
     METHODS constructor
     IMPORTING

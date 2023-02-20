@@ -27,6 +27,10 @@ CLASS cl_abap_datadescr DEFINITION
       !p_data TYPE data
       RETURNING
       VALUE(p_type_kind) TYPE abap_typekind.
+    METHODS get_rtdd_object
+      RETURNING
+      VALUE(p_object) TYPE REF TO not_released
+      RAISING cx_dynamic_check.
 
     METHODS is_instantiatable
       REDEFINITION.

@@ -37,7 +37,7 @@ define view I_BpContactToAddress
   association [0..1] to I_AddressFaxNumber   as _FaxNumber              on  $projection.AddressID         = _FaxNumber.AddressID
                                                                         and $projection.PersonNumber      = _FaxNumber.Person
                                                                         and _FaxNumber.IsDefaultFaxNumber = 'X'
-
+  
 {
   key RelationshipNumber,
   key BusinessPartnerCompany,

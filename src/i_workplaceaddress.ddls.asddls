@@ -17,7 +17,7 @@ define view I_WorkplaceAddress
 
     inner join   but000 as bp   on bp.partner_guid = Mom.partner_guid
     inner join   adcp   as root on root.addrnumber = Mom.org_addr_number
-                               and root.persnumber = bp.persnumber
+                               //and root.persnumber = bp.persnumber //Commented because of Internal Incident: 2280158276, Performance Issue with I_WorkplaceAddress due to Cyclic join
     
   association [0..1] to adr6 as _mail  on  root.addrnumber = _mail.addrnumber
                                        and root.persnumber = _mail.persnumber
@@ -58,6 +58,7 @@ define view I_WorkplaceAddress
       FunctionalTitlename,
       Department,
       CommunicationMediumType,
+      PersonNumber,
       IsBusinessPurposeCompleted,
       AuthorizationGroup
 }

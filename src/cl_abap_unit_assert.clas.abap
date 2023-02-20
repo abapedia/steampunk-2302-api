@@ -49,6 +49,7 @@ CLASS cl_abap_unit_assert DEFINITION  PUBLIC ABSTRACT FINAL CREATE PRIVATE.
       assert_equals_float
         IMPORTING   VALUE(act)              TYPE numeric
                     VALUE(exp)              TYPE numeric
+                    !atol                   TYPE numeric OPTIONAL
                     !rtol                   TYPE numeric DEFAULT cl_abap_unit_assert=>rtol_default
                     !msg                    TYPE csequence OPTIONAL
                     !level                  TYPE int1 DEFAULT if_abap_unit_constant=>severity-medium

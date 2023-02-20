@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
 @ClientHandling.algorithm: #SESSION_VARIABLE
-@EndUserText.label: 'View shows Business Partner Occupation'
+@EndUserText.label: 'Business Partner Occupation'
 
 @ObjectModel: {
   representativeKey: 'BusinessPartnerOccupation',

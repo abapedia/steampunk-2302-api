@@ -35,6 +35,15 @@ CLASS cx_bcfg_transport_request DEFINITION
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF no_open_transport.
+    CONSTANTS:
+    BEGIN OF no_open_default_transport,
+      msgid TYPE symsgid VALUE 'S_BCFG_REUSE',
+      msgno TYPE symsgno VALUE '009',
+      attr1 TYPE scx_attrname VALUE '',
+      attr2 TYPE scx_attrname VALUE '',
+      attr3 TYPE scx_attrname VALUE '',
+      attr4 TYPE scx_attrname VALUE '',
+    END OF no_open_default_transport.
     METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL

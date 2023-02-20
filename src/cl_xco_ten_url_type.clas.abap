@@ -1,4 +1,4 @@
-CLASS cl_xco_ten_url_type DEFINITION PUBLIC ABSTRACT
+CLASS cl_xco_ten_url_type DEFINITION PUBLIC FINAL
      CREATE PRIVATE.
   PUBLIC SECTION.
     TYPES:
@@ -6,16 +6,6 @@ CLASS cl_xco_ten_url_type DEFINITION PUBLIC ABSTRACT
 
     DATA:
       value TYPE tv_value READ-ONLY.
-
-  PROTECTED SECTION.
-    METHODS:
-      get_name REDEFINITION,
-
-      get_url ABSTRACT
-        IMPORTING
-          is_tenant     TYPE not_released
-        RETURNING
-          VALUE(rv_url) TYPE not_released.
 
 ENDCLASS.
 

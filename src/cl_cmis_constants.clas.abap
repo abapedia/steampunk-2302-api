@@ -59,16 +59,17 @@ CLASS cl_cmis_constants DEFINITION
       END OF action.
     CONSTANTS:
       BEGIN OF base_type_id,
-        cmis_document     TYPE cmis_enum VALUE 'cmis:document',
-        cmis_folder       TYPE cmis_enum VALUE 'cmis:folder',
-        cmis_relationship TYPE cmis_enum VALUE 'cmis:relationship',
-        cmis_policy       TYPE cmis_enum VALUE 'cmis:policy',
-        cmis_item         TYPE cmis_enum VALUE 'cmis:item',
-        cmis_secondary    TYPE cmis_enum VALUE 'cmis:secondary',
-        cmis_rm_hold      TYPE cmis_enum VALUE 'cmis:rm_hold',
-        mcm_value_help    TYPE cmis_enum VALUE 'mcm:valueHelp',
-        mcm_link          TYPE cmis_enum VALUE 'mcm:link',
-        sapecm_uri        TYPE cmis_enum VALUE 'sapecm:uri',
+        cmis_document      TYPE cmis_enum VALUE 'cmis:document',
+        cmis_document_type TYPE cmis_enum VALUE 'cmis:document type',
+        cmis_folder        TYPE cmis_enum VALUE 'cmis:folder',
+        cmis_relationship  TYPE cmis_enum VALUE 'cmis:relationship',
+        cmis_policy        TYPE cmis_enum VALUE 'cmis:policy',
+        cmis_item          TYPE cmis_enum VALUE 'cmis:item',
+        cmis_secondary     TYPE cmis_enum VALUE 'cmis:secondary',
+        cmis_rm_hold       TYPE cmis_enum VALUE 'cmis:rm_hold',
+        mcm_value_help     TYPE cmis_enum VALUE 'mcm:valueHelp',
+        mcm_link           TYPE cmis_enum VALUE 'mcm:link',
+        sapecm_uri         TYPE cmis_enum VALUE 'sapecm:uri',
       END OF base_type_id.
     CONSTANTS:
       BEGIN OF binding_type,

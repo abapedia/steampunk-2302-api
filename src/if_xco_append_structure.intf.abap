@@ -5,7 +5,6 @@ INTERFACE if_xco_append_structure PUBLIC.
   ALIASES:
     name FOR if_xco_ad_object~name,
 
-    exists FOR if_xco_ad_object~exists,
     get_state FOR if_xco_ad_object~get_state,
     check_syntax FOR if_xco_ad_object~check_syntax.
 
@@ -13,6 +12,12 @@ INTERFACE if_xco_append_structure PUBLIC.
     components TYPE REF TO if_xco_aps_components_factory READ-ONLY.
 
   METHODS:
+    exists
+      IMPORTING
+        io_read_state    TYPE REF TO cl_xco_ad_object_read_state OPTIONAL
+        io_origin        TYPE REF TO cl_xco_tab_origin OPTIONAL
+      RETURNING
+        VALUE(rv_exists) TYPE abap_bool,
     content
       IMPORTING
         io_read_state     TYPE REF TO cl_xco_ad_object_read_state OPTIONAL

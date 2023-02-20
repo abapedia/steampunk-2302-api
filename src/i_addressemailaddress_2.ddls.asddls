@@ -30,6 +30,7 @@ define view entity I_AddressEmailAddress_2 as select from adr6
   key CommMediumSequenceNumber,
       EmailAddress,
       EmailAddressIsCurrentDefault,
+      CommLineNotForUnsolicitedCntct,
       ValidityStartDate,
       ValidityEndDate
 }

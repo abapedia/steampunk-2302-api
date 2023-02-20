@@ -3,7 +3,7 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
-@EndUserText.label: 'Business Partner Industry System Text'
+@EndUserText.label: 'Industry System - Text'
 @ClientHandling.algorithm: #SESSION_VARIABLE
 
 @ObjectModel: {

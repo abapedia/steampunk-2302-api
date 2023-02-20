@@ -6,6 +6,7 @@
 @AbapCatalog.buffering.numberOfKeyFields: 2
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Unit of Measure Text'
+@Search.searchable: true
 
 @VDM.viewType: #BASIC 
 @VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API

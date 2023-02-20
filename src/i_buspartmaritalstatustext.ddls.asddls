@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @VDM.viewType: #BASIC
 @ClientHandling.algorithm: #SESSION_VARIABLE
-@EndUserText.label: 'View shows  BUPA Marital Status Text'
+@EndUserText.label: 'BUPA Marital Status - Text'
 @ObjectModel: {
   representativeKey: 'MaritalStatus',
   dataCategory: #TEXT,

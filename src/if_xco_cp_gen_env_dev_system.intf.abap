@@ -17,6 +17,7 @@ INTERFACE if_xco_cp_gen_env_dev_system PUBLIC.
       devc TYPE REF TO if_xco_cp_gen_devc_d_api,
       doma TYPE REF TO if_xco_cp_gen_doma_d_api,
       dtel TYPE REF TO if_xco_cp_gen_dtel_d_api,
+      drty TYPE REF TO if_xco_cp_gen_drty_o_factory,
       fugr TYPE REF TO if_xco_cp_gen_fugr_d_api,
       intf TYPE REF TO if_xco_cp_gen_intf_d_api,
       msag TYPE REF TO if_xco_cp_gen_msag_d_api,
@@ -34,5 +35,9 @@ INTERFACE if_xco_cp_gen_env_dev_system PUBLIC.
   METHODS:
     create_put_operation
       RETURNING
-        VALUE(ro_put_operation) TYPE REF TO if_xco_cp_gen_d_o_put.
+        VALUE(ro_put_operation) TYPE REF TO if_xco_cp_gen_d_o_put,
+
+    create_patch_operation
+      RETURNING
+        VALUE(ro_patch_operation) TYPE REF TO if_xco_cp_gen_o_patch_mass.
 ENDINTERFACE.

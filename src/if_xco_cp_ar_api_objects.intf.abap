@@ -1,7 +1,6 @@
 INTERFACE if_xco_cp_ar_api_objects PUBLIC.
   DATA:
     all  TYPE REF TO if_xco_ar_object_class READ-ONLY,
-
     aplo TYPE REF TO if_xco_cp_ar_aplo_oc_factory READ-ONLY,
     bdef TYPE REF TO if_xco_cp_ar_bdef_oc_factory READ-ONLY,
     clas TYPE REF TO if_xco_cp_ar_clas_oc_factory READ-ONLY,
@@ -10,6 +9,7 @@ INTERFACE if_xco_cp_ar_api_objects PUBLIC.
     ddlx TYPE REF TO if_xco_cp_ar_ddlx_oc_factory READ-ONLY,
     devc TYPE REF TO if_xco_cp_ar_devc_oc_factory READ-ONLY,
     doma TYPE REF TO if_xco_cp_ar_doma_oc_factory READ-ONLY,
+    drty TYPE REF TO if_xco_cp_ar_drty_oc_factory READ-ONLY,
     dtel TYPE REF TO if_xco_cp_ar_dtel_oc_factory READ-ONLY,
     fugr TYPE REF TO if_xco_cp_ar_fugr_oc_factory READ-ONLY,
     intf TYPE REF TO if_xco_cp_ar_intf_oc_factory READ-ONLY,

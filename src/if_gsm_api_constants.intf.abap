@@ -15,6 +15,7 @@ INTERFACE if_gsm_api_constants
       _8_critical TYPE if_gsm_api_types=>tv_severity VALUE 1,
       _9_critical TYPE if_gsm_api_types=>tv_severity VALUE 1,
     END OF e_severity.
+
   CONSTANTS:
     BEGIN OF e_metric_type,
       counter   TYPE if_gsm_api_types=>tv_metric_type VALUE 1,
@@ -23,16 +24,19 @@ INTERFACE if_gsm_api_constants
       quota     TYPE if_gsm_api_types=>tv_metric_type VALUE 1,
       summary   TYPE if_gsm_api_types=>tv_metric_type VALUE 1,
     END OF e_metric_type.
+
   CONSTANTS:
     BEGIN OF e_target_type,
       health TYPE if_gsm_api_types=>tv_target_type VALUE 1,
-      END OF e_target_type.
+    END OF e_target_type.
+
   CONSTANTS:
     BEGIN OF e_data_type,
       integer TYPE if_gsm_api_types=>tv_data_type VALUE 1,
       float   TYPE if_gsm_api_types=>tv_data_type VALUE 1,
       string  TYPE if_gsm_api_types=>tv_data_type VALUE 1,
     END OF e_data_type.
+
   CONSTANTS:
     BEGIN OF e_unit,
       counter     TYPE if_gsm_api_types=>tv_unit VALUE 1,
@@ -45,7 +49,8 @@ INTERFACE if_gsm_api_constants
       per_second  TYPE if_gsm_api_types=>tv_unit VALUE 1,
       seconds     TYPE if_gsm_api_types=>tv_unit VALUE 1,
       none        TYPE if_gsm_api_types=>tv_unit VALUE 1,
-      END OF e_unit.
+    END OF e_unit.
+
   CONSTANTS:
     BEGIN OF e_period,
       every_05_minutes TYPE if_gsm_api_types=>tv_period VALUE 1,
@@ -61,6 +66,7 @@ INTERFACE if_gsm_api_constants
       weekly           TYPE if_gsm_api_types=>tv_period VALUE 1,
       monthly          TYPE if_gsm_api_types=>tv_period VALUE 1,
     END OF e_period.
+
   CONSTANTS:
     BEGIN OF e_retention_time,
       _02_days  TYPE if_gsm_api_types=>tv_retention_time VALUE 1,
@@ -70,6 +76,7 @@ INTERFACE if_gsm_api_constants
       _180_days TYPE if_gsm_api_types=>tv_retention_time VALUE 1,
       _auto     TYPE if_gsm_api_types=>tv_retention_time VALUE 1,
     END OF e_retention_time.
+
   CONSTANTS:
     BEGIN OF e_category,
       availability    TYPE if_gsm_api_types=>tv_category VALUE 1,
@@ -78,13 +85,15 @@ INTERFACE if_gsm_api_constants
       configuration   TYPE if_gsm_api_types=>tv_category VALUE 1,
       self_monitoring TYPE if_gsm_api_types=>tv_category VALUE 1,
       usage           TYPE if_gsm_api_types=>tv_category VALUE 1,
-      END OF e_category.
+    END OF e_category.
+
   CONSTANTS:
     BEGIN OF e_granularity,
       hour         TYPE if_gsm_api_types=>tv_period VALUE 1,
       day          TYPE if_gsm_api_types=>tv_period VALUE 1,
       as_collected TYPE if_gsm_api_types=>tv_period VALUE 1,
     END OF e_granularity.
+
   CONSTANTS:
     BEGIN OF e_rating,
       _0_info     TYPE if_gsm_api_types=>tv_rating VALUE 0,
@@ -93,4 +102,5 @@ INTERFACE if_gsm_api_constants
       _3_critical TYPE if_gsm_api_types=>tv_rating VALUE 3,
       _4_fatal    TYPE if_gsm_api_types=>tv_rating VALUE 4,
     END OF e_rating.
+
 ENDINTERFACE.

@@ -1,5 +1,9 @@
 INTERFACE if_sadl_exit_calc_element_read
   PUBLIC.
+  TYPES BEGIN OF tx_contract.
+  TYPES            get_calculation_info TYPE not_released.
+  TYPES            calculate            TYPE not_released.
+  TYPES END OF   tx_contract.
   TYPES tt_elements TYPE SORTED TABLE OF string WITH UNIQUE DEFAULT KEY.
   METHODS get_calculation_info IMPORTING !it_requested_calc_elements TYPE tt_elements
                                          !iv_entity                  TYPE string

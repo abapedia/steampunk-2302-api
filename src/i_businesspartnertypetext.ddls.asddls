@@ -17,7 +17,7 @@
   supportedCapabilities: [ #EXTRACTION_DATA_SOURCE,#LANGUAGE_DEPENDENT_TEXT, #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
 }
 @Analytics.dataExtraction.enabled: true
-@EndUserText.label: 'Business Partner Type Descriptions'
+@EndUserText.label: 'Business Partner Type - Text'
 @Metadata.ignorePropagatedAnnotations: true
 define view I_BusinessPartnerTypeText
   as select from tb004t

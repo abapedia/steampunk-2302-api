@@ -12,7 +12,6 @@ INTERFACE if_xco_cp_gen_doma_s_form PUBLIC.
         iv_short_description TYPE tv_short_description
       RETURNING
         VALUE(ro_me)         TYPE REF TO if_xco_cp_gen_doma_s_form,
-
     set_format
       IMPORTING
         io_format    TYPE REF TO if_xco_gen_doma_format

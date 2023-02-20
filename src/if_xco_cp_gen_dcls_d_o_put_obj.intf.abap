@@ -11,8 +11,8 @@ INTERFACE if_xco_cp_gen_dcls_d_o_put_obj PUBLIC.
     create_form_specification
       RETURNING
         VALUE(ro_form_specification) TYPE REF TO if_xco_cp_gen_dcls_s_form,
-    delete_form_specification,
     get_form_specification
       RETURNING
-        VALUE(ro_form_specification) TYPE REF TO if_xco_cp_gen_dcls_s_form.
+        VALUE(ro_form_specification) TYPE REF TO if_xco_cp_gen_dcls_s_form,
+    delete_form_specification.
 ENDINTERFACE.

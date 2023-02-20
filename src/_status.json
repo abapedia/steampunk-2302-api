@@ -347,6 +347,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ttyp,abp_entity_name_tab": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "dtel,abp_field_name": {
     "status": "RELEASED",
     "successors": []
@@ -932,6 +936,10 @@
     "successors": []
   },
   "tabl,bdwfap_par": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "dtel,bedat": {
     "status": "RELEASED",
     "successors": []
   },
@@ -1695,6 +1703,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "clas,cl_mail_address": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "clas,cl_message_helper": {
     "status": "RELEASED",
     "successors": []
@@ -1736,6 +1748,14 @@
     "successors": []
   },
   "clas,cl_rfc_destination_provider": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cl_satc_api": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cl_satc_api_check_variant": {
     "status": "RELEASED",
     "successors": []
   },
@@ -2147,7 +2167,15 @@
     "status": "RELEASED",
     "successors": []
   },
+  "clas,cl_xco_cp_dbt_load_unit_f": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "clas,cl_xco_cp_dbt_origin_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cl_xco_cp_dbt_storage_type_f": {
     "status": "RELEASED",
     "successors": []
   },
@@ -2275,6 +2303,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "clas,cl_xco_cp_tab_origin_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "clas,cl_xco_cp_ten_url_type_f": {
     "status": "RELEASED",
     "successors": []
@@ -2387,6 +2419,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "clas,cl_xco_dbt_load_unit": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "clas,cl_xco_dbt_origin": {
     "status": "RELEASED",
     "successors": []
@@ -2400,6 +2436,10 @@
     "successors": []
   },
   "clas,cl_xco_dbt_size_category_f": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cl_xco_dbt_storage_type": {
     "status": "RELEASED",
     "successors": []
   },
@@ -2744,6 +2784,14 @@
     "successors": []
   },
   "clas,cl_xco_tab_fp_fk_field_type": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cl_xco_tab_origin": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cl_xco_tab_o_local": {
     "status": "RELEASED",
     "successors": []
   },
@@ -3684,6 +3732,10 @@
     "successors": []
   },
   "clas,cx_sadl_exit": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,cx_satc_api": {
     "status": "RELEASED",
     "successors": []
   },
@@ -5643,6 +5695,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_mail_address": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_mbc_cp_api_business_config": {
     "status": "RELEASED",
     "successors": []
@@ -5752,6 +5808,26 @@
     "successors": []
   },
   "intf,if_sadl_exit_calc_element_read": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_satc_api_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_satc_api_result": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_satc_api_run": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_satc_api_run_configuration": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_satc_object_set": {
     "status": "RELEASED",
     "successors": []
   },
@@ -5888,6 +5964,10 @@
     "successors": []
   },
   "intf,if_wsprotocol": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_ws_sequence_facade": {
     "status": "RELEASED",
     "successors": []
   },
@@ -6339,6 +6419,14 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_ar_drty_object_class": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_ar_drty_object_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_ar_dtel_object_class": {
     "status": "RELEASED",
     "successors": []
@@ -6707,6 +6795,14 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_cds_type_definition": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cds_type_definitions": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_cds_union": {
     "status": "RELEASED",
     "successors": []
@@ -6848,6 +6944,10 @@
     "successors": []
   },
   "intf,if_xco_cp_ar_doma_oc_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_ar_drty_oc_factory": {
     "status": "RELEASED",
     "successors": []
   },
@@ -7247,6 +7347,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_cp_gen_doma_o_patch_sct": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_cp_gen_doma_s_change": {
     "status": "RELEASED",
     "successors": []
@@ -7275,6 +7379,26 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_cp_gen_drty_o_delete": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_drty_o_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_drty_o_put_objct": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_drty_o_put_sctn": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_drty_s_form": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_cp_gen_dtel_d_api": {
     "status": "RELEASED",
     "successors": []
@@ -7296,6 +7420,10 @@
     "successors": []
   },
   "intf,if_xco_cp_gen_dtel_d_o_put_sct": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_dtel_o_patch_sct": {
     "status": "RELEASED",
     "successors": []
   },
@@ -7483,6 +7611,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_cp_gen_o_patch_mass": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_cp_gen_o_post": {
     "status": "RELEASED",
     "successors": []
@@ -7559,7 +7691,31 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_cp_gen_tabl_dbt_o_pat_o": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_dbt_o_pat_s": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_dbt_s_chng": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_dbt_s_ch_up": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_dbt_s_cu_td": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_cp_gen_tabl_dbt_s_form": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_dbt_s_fo_td": {
     "status": "RELEASED",
     "successors": []
   },
@@ -7608,6 +7764,22 @@
     "successors": []
   },
   "intf,if_xco_cp_gen_tabl_str_d_o_p_o": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_str_o_pat_o": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_str_o_pat_s": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_str_s_chng": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_gen_tabl_str_s_ch_up": {
     "status": "RELEASED",
     "successors": []
   },
@@ -7732,6 +7904,14 @@
     "successors": []
   },
   "intf,if_xco_cp_lang_format_factory": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_namespace": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_cp_namespace_factory": {
     "status": "RELEASED",
     "successors": []
   },
@@ -8128,6 +8308,10 @@
     "successors": []
   },
   "intf,if_xco_dbt_search_help_content": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_dbt_text_table": {
     "status": "RELEASED",
     "successors": []
   },
@@ -8963,6 +9147,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_gen_doma_origin": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_gen_doma_s_ch_up_fxd_vl": {
     "status": "RELEASED",
     "successors": []
@@ -8979,7 +9167,19 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_gen_drty_std_type": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_drty_s_fo_spl_tp_df": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_gen_dtel_data_type": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_dtel_origin": {
     "status": "RELEASED",
     "successors": []
   },
@@ -9087,6 +9287,18 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_gen_tabl_dbt_s_ch_up_fl": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_dbt_s_ch_up_ic": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_dbt_s_ch_u_f_u": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_gen_tabl_dbt_s_fo_field": {
     "status": "RELEASED",
     "successors": []
@@ -9127,11 +9339,39 @@
     "status": "RELEASED",
     "successors": []
   },
+  "intf,if_xco_gen_tabl_origin": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_str_s_ch_u_cmp": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_str_s_ch_u_c_u": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_str_s_ch_u_inc": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "intf,if_xco_gen_tabl_str_s_fo_cmpnt": {
     "status": "RELEASED",
     "successors": []
   },
   "intf,if_xco_gen_tabl_str_s_fo_incl": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_s_ch_u_cur_qun": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_s_ch_u_frg_key": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_gen_tabl_s_ch_u_sch_hlp": {
     "status": "RELEASED",
     "successors": []
   },
@@ -9324,6 +9564,14 @@
     "successors": []
   },
   "intf,if_xco_intf_c_method_content": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_intf_implementations": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_intf_implementations_fc": {
     "status": "RELEASED",
     "successors": []
   },
@@ -9604,6 +9852,10 @@
     "successors": []
   },
   "intf,if_xco_str_search_help_content": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "intf,if_xco_tab_cacheable_origin": {
     "status": "RELEASED",
     "successors": []
   },
@@ -9983,6 +10235,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_addressdefaultrepresentation": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_addressdeliveryservicetype": {
     "status": "RELEASED",
     "successors": []
@@ -10071,6 +10327,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_addrpersnnamedfltrprstn": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_apisforclouddevelopment": {
     "status": "RELEASED",
     "successors": []
@@ -10079,7 +10339,27 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_bpaddindependentfaxtp_2": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_bpaddindependentwebsitetp_2": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_bpaddrdepdntintllocnumber": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_bpaddrindependentemailtp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_bpaddrindependentmobiletp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_bpaddrindependentphonetp_3": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10115,6 +10395,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_bupaidentification": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_bupaidentificationtype": {
     "status": "RELEASED",
     "successors": []
@@ -10123,11 +10407,23 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_businesspartneraddresstp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_businesspartneraddresstype": {
     "status": "RELEASED",
     "successors": []
   },
   "ddls,i_businesspartneraddresstypet": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_businesspartneraddrusagetp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_businesspartnerbanktp_3": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10144,6 +10440,10 @@
     "successors": []
   },
   "ddls,i_businesspartnerindustry": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_businesspartnerindustrytp_3": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10171,6 +10471,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_businesspartnerroletp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_businesspartnerstandardusage": {
     "status": "RELEASED",
     "successors": []
@@ -10179,11 +10483,19 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_businesspartnertaxnumbertp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_businesspartnertobprole": {
     "status": "RELEASED",
     "successors": []
   },
   "ddls,i_businesspartnertobprole_2": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_businesspartnertp_3": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10231,7 +10543,23 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_buspartemailaddresstp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartfaxnumbertp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartidentificationtp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_buspartindustrykey": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartindustrykeytext": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10251,7 +10579,23 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_buspartmobilephonenumbertp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_buspartoccupationtext": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartscriptedorgaddrtp_2": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartscriptgroupaddrtp_2": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartscriptpersonaddrtp_2": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10260,6 +10604,14 @@
     "successors": []
   },
   "ddls,i_busparttaxtypetext": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_busparttelephonenumbertp_3": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_buspartwebsitetp_3": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10320,6 +10672,10 @@
     "successors": []
   },
   "ddls,i_countrytext": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_countryvh": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10567,7 +10923,15 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_orgaddressdefaultrprstn": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_organizationaddress": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_orgnamepostladdrdfltrprstn": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10588,6 +10952,10 @@
     "successors": []
   },
   "ddls,i_personaddress": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_personaddressdefaultrprstn": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10695,6 +11063,14 @@
     "status": "RELEASED",
     "successors": []
   },
+  "ddls,i_timezoneianacodemap": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "ddls,i_timezoneianacodestdvh": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "ddls,i_timezonerule": {
     "status": "RELEASED",
     "successors": []
@@ -10772,6 +11148,10 @@
     "successors": []
   },
   "ddls,i_yearmonth": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "dtel,j_objnr": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10856,6 +11236,10 @@
     "successors": []
   },
   "dtel,msehi": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "doma,mtart": {
     "status": "RELEASED",
     "successors": []
   },
@@ -10983,11 +11367,11 @@
     "status": "RELEASED",
     "successors": []
   },
-  "doma,regex_standard": {
+  "dtel,regex_standard": {
     "status": "RELEASED",
     "successors": []
   },
-  "dtel,regex_standard": {
+  "doma,regex_standard": {
     "status": "RELEASED",
     "successors": []
   },
@@ -11035,6 +11419,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "dtel,sign_ap": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "dtel,skost": {
     "status": "RELEASED",
     "successors": []
@@ -11048,6 +11436,14 @@
     "successors": []
   },
   "doma,spras": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,sql_currency_conversion": {
+    "status": "RELEASED",
+    "successors": []
+  },
+  "clas,sql_unit_conversion": {
     "status": "RELEASED",
     "successors": []
   },
@@ -12035,6 +12431,10 @@
     "status": "RELEASED",
     "successors": []
   },
+  "dtel,versn": {
+    "status": "RELEASED",
+    "successors": []
+  },
   "dtel,waers": {
     "status": "RELEASED",
     "successors": []
@@ -12753,11 +13153,11 @@
     "status": "DEPRECATED",
     "successors": []
   },
-  "dtel,char255": {
+  "doma,char255": {
     "status": "DEPRECATED",
     "successors": []
   },
-  "doma,char255": {
+  "dtel,char255": {
     "status": "DEPRECATED",
     "successors": []
   },
