@@ -1,0 +1,22 @@
+CLASS cl_xco_cp_gen_dtel_template DEFINITION
+  PUBLIC
+  ABSTRACT
+  CREATE PRIVATE.
+
+  PUBLIC SECTION.
+
+    INTERFACES if_xco_cp_gen_dtel_template
+      FINAL METHODS get.
+  PROTECTED SECTION.
+
+    METHODS constructor
+      IMPORTING
+      !io_template TYPE REF TO not_released.
+    METHODS get_additional_check
+      ABSTRACT
+      RETURNING
+      VALUE(ro_additional_check) TYPE REF TO if_xco_dp_check.
+ENDCLASS.
+
+CLASS cl_xco_cp_gen_dtel_template IMPLEMENTATION.
+ENDCLASS.
